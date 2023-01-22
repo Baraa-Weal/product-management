@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <link rel="stylesheet" href="shopapp.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="crud">
+        <h2>crud</h2>
+        <p>product Management system</p>
+<div class="heead"></div>
+<div class="inputs"></div>
+      <input type="text" id="title" placeholder="title"> 
+      <div class="price">
+        <input onkeyup=" gettotel()"  type="number" placeholder="price" id="price">
+        <input onkeyup=" gettotel()" type="number" placeholder="taxes" id="taxes">
+        <input onkeyup=" gettotel()" type="number" placeholder="ads" id="ads">
+        <input onkeyup=" gettotel()" type="number" placeholder="discount" id="discount">
+        <small id="total"></small>
+      </div>
+     <input type="number" placeholder="count" id="count">
+     <input type="text" placeholder="category" id="category">
+    <button type="submit" id="submit">Create</button>
+    </div>
+<div class="outputs">
+<div class="searchBlook">
+<input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search">
+<div class="btnsearch">
+    <button onclick="getsearchmood(this.id)" id="searchTitle">Search by title</button>
+    <button onclick="getsearchmood(this.id)" id="searchCategory">Search By Category </button>
+
+</div>    
+</div>
+<div id="deletAll"></div>
+<table>
+<tr>
+<th>id</th>
+<th>title</th>
+<th>price</th>
+<th>taxes</th>
+<th>ads</th>
+<th>discount</th>
+<th>total</th>
+<th>Category</th>
+<th>Update</th>
+<th>deleat</th>
+
+</tr>
+<tbody id="tbody">
+    <tr>
+        <td>1</td>
+        <td>iphone</td>
+        <td>2000</td>
+        <td>100</td>
+        <td>100</td>
+        <td>200</td>
+        <td>2100</td>
+        <td>phone</td>
+         <td><button id="update">update</button></td>
+         <td><button id="deleat">deleat</button></td>
+
+
+
+
+    </tr>
+</tbody>
+</table>
+<script src="shopapp.js"></script>
+</div>
+
+</body>
+</html>
